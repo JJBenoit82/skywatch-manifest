@@ -9,12 +9,12 @@ manifest:
       remote: zephyrproject-rtos
       revision: v4.3.0
       # Option A (broad): pull all Zephyr-managed modules
-      import: true
+      #import: true
       # Option B (leaner): only pull what you need
-      #import:
-      # name-allowlist:
-      # - cmsis
-      # - hal_nxp
+      import:
+       name-allowlist:
+       - cmsis
+       - hal_nxp
     - name: skywatch-firmware
       remote: my-github
       revision: main
