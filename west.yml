@@ -19,6 +19,7 @@ manifest:
       remote: my-github
       revision: main
       path: skywatch
+      west-commands: ext/west-commands.yml
 self:
   # Put the manifest repo here in the workspace root
   path: manifest
