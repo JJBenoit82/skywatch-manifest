@@ -1,0 +1,24 @@
+manifest:
+  remotes:
+    - name: zephyrproject-rtos
+        url-base: https://github.com/zephyrproject-rtos
+    - name: my-github
+        url-base: git@github.com:JJBenoit82
+  projects:
+  - name: zephyr
+    remote: zephyrproject-rtos
+    revision: v4.3.0
+    # Option A (broad): pull all Zephyr-managed modules
+    import: true
+    # Option B (leaner): only pull what you need
+    #import:
+    # name-allowlist:
+    # - cmsis
+    # - hal_nxp
+  - name: skywatch-firmware
+    remote: my-github
+    revision: main
+    path: skywatch
+self:
+  # Put the manifest repo here in the workspace root
+  path: manifest
