@@ -12,9 +12,9 @@ manifest:
       import: true
       # Option B (leaner): only pull what you need
       #import:
-      # name-allowlist:
-      # - cmsis
-      # - hal_nxp
+       #name-allowlist:
+       #- cmsis
+       #- hal_nxp
     - name: skywatch-firmware
       remote: my-github
       revision: main
